@@ -1,0 +1,36 @@
+{
+  "name": "b2b_ordering",
+  "version": "0.0.1",
+  "description": "a B2B ordering site built using PHP - Nike assets are used for educational purposes only",
+  "main": "index.php",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brucebrophy/b2b_ordering.git"
+  },
+  "keywords": [
+    "B2B"
+  ],
+  "author": "Bruce Brophy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brucebrophy/b2b_ordering/issues"
+  },
+  "homepage": "https://github.com/brucebrophy/b2b_ordering#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "browser-sync": "^2.18.6",
+    "eslint": "^3.13.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-uglify": "^2.0.0",
+    "node-sass": "^4.3.0"
+  },
+  "dependencies": {}
+}

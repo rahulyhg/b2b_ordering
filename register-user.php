@@ -78,6 +78,7 @@ if(isset($_POST['submit-form'])) {
 <html>
 <head>
 	<title>Register</title>
+	<link rel="stylesheet" href="/css/styles.min.css">
 </head>
 <body>
 	<?php echo ($error != "") ? $error : ""; ?>

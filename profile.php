@@ -46,6 +46,7 @@ if(isset($_POST['submit-settings'])) {
 <html>
 <head>
 	<title>Profile</title>
+	<link rel="stylesheet" href="/css/styles.min.css">
 </head>
 <body>
 	<?php echo $message; ?>
