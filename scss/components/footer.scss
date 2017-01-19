@@ -1,0 +1,36 @@
+footer {
+  background: #333;
+  color: #fff;
+  height: 100px;
+  margin-top: 50px;
+}
+
+.copyright-text {
+  font-size: 12px;
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: flex-start;
+}
+
+.footer-logo-ctn {
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+}
+
+.footer-logo {
+  width: 140px;
+}
+
+.footer-social {
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .footer-social-icon {
+    width: 30px;
+    margin: 0 10px 0 10px;
+  }
+}
