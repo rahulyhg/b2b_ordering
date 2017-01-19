@@ -101,6 +101,116 @@ if(isset($_POST['submit-settings'])) {
       <div class="hero-bar profile-bar"></div>
     </section>
 
+		<!-- PROFILE UPDATE FORM -->
+		<section>
+			<div class="container">
+				<div class="row">
+					<!-- USER PROFILE FORM -->
+					<div class="form-ctn col-md-6">
+
+						<!-- Form Heading -->
+						<div class="row">
+							<div class="col-md-12">
+								<h2 class="form-heading">update profile</h2>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12 col-sm-6">
+								<div class="form">
+									<div class="row">
+
+										<form action="profile.php" method="post">
+											<div class="form-item col-md-7">
+												<label for="name">first name:</label><br>
+												<input class="col-md-12" type="text" name="firstname" value="<?php echo $firstname; ?>">
+											</div>
+
+											<div class="form-item col-md-7">
+												<label for="name">last name:</label><br>
+												<input class="col-md-12" type="text" name="lastname" value="<?php echo $lastname; ?>">
+											</div>
+
+											<div class="form-item col-md-7">
+												<label for="name">e-mail:</label><br>
+												<input class="col-md-12" type="text" name="email" value="<?php echo $email; ?>">
+											</div>
+
+											<div class="form-item col-md-7">
+												<label for="name">company:</label><br>
+												<input class="col-md-12" type="text" name="company" value="<?php echo $company; ?>">
+											</div>
+
+											<div class="form-item col-md-7">
+												<label for="name">company address:</label><br>
+												<input class="col-md-12" type="text" name="company" value="<?php echo $email; ?>">
+											</div>
+
+											<div class="form-item col-md-7">
+												<input class="btn col-md-12" type="submit" value="Update" name="submit-settings" />
+											</div>
+										</form>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- PASSWORD FORM -->
+					<div class="form-ctn col-md-6 col-sm-6">
+						<div class="row">
+							<div class="col-md-12">
+								<h2 class="form-heading">update password</h2>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form">
+									<div class="row">
+										<form action="profile.php" method="post">
+											<div class="form-item col-md-7">
+												<label for="name">password:</label><br>
+												<input class="col-md-12" type="password" name="firstname" value="">
+											</div>
+
+											<div class="form-item col-md-7">
+												<label for="name">confirm password:</label><br>
+												<input class="col-md-12" type="password" name="lastname" value="">
+											</div>
+
+											<div class="form-item col-md-7">
+												<input class="btn col-md-12" type="submit" value="Update" name="" />
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 copyright-text">
+						<p>All content from Nike.com - Used for Educational purposes</p>
+					</div>
+					<div class="col-md-2 footer-logo-ctn">
+						<img class="footer-logo" src="/images/white_nike_swoosh.svg" alt="">
+					</div>
+					<div class="col-md-5 footer-social">
+						<img class="footer-social-icon" src="/images/instagram.svg" alt="">
+						<img class="footer-social-icon" src="/images/twitter.svg" alt="">
+						<img class="footer-social-icon" src="/images/facebook.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</footer>
+
     <script src="js/index.min.js" charset="utf-8"></script>
   </body>
 </html>
