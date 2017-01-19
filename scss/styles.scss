@@ -1,2 +1,13 @@
 @import "utilities/grid.scss";      // Bootstrap grid & normalize.css
 @import "utilities/colors.scss";    // Color Variables
+
+// ----- Default Styles
+body {
+  font-family: 'Roboto';
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+// ----- Component Styles
+@import "components/header.scss";
+@import "components/hero.scss";

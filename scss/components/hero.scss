@@ -1,0 +1,36 @@
+.hero-image {
+  background-color: #FF7043; // leave this in place for DOM load -- fallback
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  margin-top: 20px;
+}
+
+.order-bar { background-color: #eeeae6; }
+.profile-bar { background-color: #f4e4a9; }
+.hero-bar {
+  height: 375px;
+  top: 220px;
+  width: 100%;
+  position: absolute;
+  z-index: -999;
+}
+
+.hero-border {
+  height: 15px;
+  background-color: #111;
+}
+
+.hero-heading-container {
+  height: 120px;
+}
+
+.hero-heading {
+  margin-top: 0px;
+  font-size: 70px;
+  text-transform: uppercase;
+}
+
+.order-image { background-image: url('../images/order_hero_image.jpg'); }
+.profile-image { background-image: url('../images/profile_hero_image.jpg'); }

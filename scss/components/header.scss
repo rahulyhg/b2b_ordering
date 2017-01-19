@@ -1,0 +1,40 @@
+header {
+  height: 90px;
+  width: 100%;
+
+  .nav-container {
+    height: 90px;
+  }
+}
+
+.nav-logo {
+  height: inherit;
+  display: flex;
+
+  .logo {
+    width: 120px;
+  }
+}
+
+.header-nav {
+  display: flex;
+  height: inherit;
+  margin-top: 0;
+  justify-content: center;
+  align-items: center;
+
+  .nav-item {
+    flex: 1 1 auto;
+    font-size: 16px;
+    font-weight: 700;
+    list-style: none;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:visited {
+      color: #111;
+    }
+  }
+}
