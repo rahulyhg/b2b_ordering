@@ -1,6 +1,7 @@
 <?php
 //global.inc.php
-
+require_once 'classes/Product.class.php';
+require_once 'classes/ProductTools.class.php';
 require_once 'classes/User.class.php';
 require_once 'classes/UserTools.class.php';
 require_once 'classes/DB.class.php';
