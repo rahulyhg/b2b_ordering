@@ -38,3 +38,15 @@ input[type="password"] {
     padding-left: 20px;
   }
 }
+
+select {
+  border-radius: 0;
+  border: 0;
+  background: #333;
+  color: #FFF;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 30px 5px 30px;
+  -webkit-appearance: none;
+  text-align: center;
+}

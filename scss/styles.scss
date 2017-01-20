@@ -8,6 +8,10 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 // ----- Component Styles
 @import "components/buttons.scss";
 @import "components/header.scss";
@@ -15,3 +19,4 @@ body {
 @import "components/order-cards.scss";
 @import "components/footer.scss";
 @import "components/form.scss";
+@import "components/product.scss";

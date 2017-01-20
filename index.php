@@ -8,6 +8,7 @@ require_once 'includes/global.inc.php';
 <html>
   <head>
     <title>Home | Nike Business</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.min.css">
   </head>
