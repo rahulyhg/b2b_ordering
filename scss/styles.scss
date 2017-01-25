@@ -3,6 +3,7 @@
 
 // ----- Default Styles
 body {
+  background-color: #f5f5f5;
   font-family: 'Roboto';
   line-height: 1.6;
   text-rendering: optimizeLegibility;
@@ -20,3 +21,4 @@ body {
 @import "components/footer.scss";
 @import "components/form.scss";
 @import "components/product.scss";
+@import "components/category.scss";

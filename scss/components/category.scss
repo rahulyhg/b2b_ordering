@@ -1,0 +1,24 @@
+.category-container {
+  // background-color: teal;
+}
+
+.category-heading-ctn {
+  background-color: #d8e1d8;
+  height: 250px;
+}
+
+.category-heading {
+  color: #FFF;
+  font-size: 50px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: -40px;
+  margin-left: 20px;
+
+  .product-arrow {
+    margin-top: -15px;
+    fill: #FFF;
+    transform: rotate(180deg);
+    width: 100px;
+  }
+}

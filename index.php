@@ -23,7 +23,7 @@ require_once 'includes/global.inc.php';
           <!-- NAVIGATION -->
           <ul class="header-nav col-lg-10">
             <a href="index.php" class="nav-item"><li>orders</li></a>
-            <a href="#" class="nav-item"><li>products</li></a>
+            <a href="products.php" class="nav-item"><li>products</li></a>
             <a href="#" class="nav-item"><li>create order</li></a>
             <a href="#" class="nav-item"><li>invoices</li></a>
             <!-- Log In Form -->
