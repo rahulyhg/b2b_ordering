@@ -1,11 +1,17 @@
 <?php
-// PHP CODE HERE
+  require_once 'includes/global.inc.php';
 ?>
 
 <!doctype html>
 <html>
   <head>
     <title>Home | Nike Business</title>
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#333">
+    <meta name="theme-color" content="#333">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.min.css">
@@ -21,7 +27,7 @@
           <!-- NAVIGATION -->
           <ul class="header-nav col-lg-10">
             <a href="index.php" class="nav-item"><li>orders</li></a>
-            <a href="#" class="nav-item"><li>products</li></a>
+            <a href="products.php" class="nav-item"><li>products</li></a>
             <a href="#" class="nav-item"><li>create order</li></a>
             <a href="#" class="nav-item"><li>invoices</li></a>
             <!-- Log In Form -->
@@ -31,7 +37,6 @@
                 <a class="nav-item" href="profile.php"><li>Profile</li></a>
                 <a class="nav-item" href="logout.php"><li>Log Out</li></a>
             <?php else : ?>
-                <!-- <h1>You are not logged in.</h1> -->
                 <a class="nav-item" href="login.php"><li>Log In</li></a>
                 <a class="nav-item" href="register-user.php"><li href="register-user.php">Register</li></a>
             <?php endif; ?>

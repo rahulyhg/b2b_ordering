@@ -1,5 +1,4 @@
 <?php
-
 require_once 'includes/global.inc.php';
 
 //check to see if they're logged in
@@ -45,7 +44,15 @@ if(isset($_POST['submit-settings'])) {
 <!doctype html>
 <html>
   <head>
+		<meta charset="utf-8">
     <title>Home | Nike Business</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="favicons/manifest.json">
+		<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#333">
+		<meta name="theme-color" content="#333">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.min.css">
   </head>
@@ -60,14 +67,14 @@ if(isset($_POST['submit-settings'])) {
 					<!-- NAVIGATION -->
           <ul class="header-nav col-lg-10">
             <a href="index.php" class="nav-item"><li>orders</li></a>
-            <a href="#" class="nav-item"><li>products</li></a>
+            <a href="products.php" class="nav-item"><li>products</li></a>
             <a href="#" class="nav-item"><li>create order</li></a>
             <a href="#" class="nav-item"><li>invoices</li></a>
             <!-- Log In Form -->
             <?php if(isset($_SESSION['logged_in'])) : ?>
                 <?php $user = unserialize($_SESSION['user']); ?>
                 <!-- <h1>Hello, <?php echo $user->username; ?>!</h1> -->
-                <a class="nav-item" href="profile.php"><li>Profile</li></a>
+                <a class="nav-item current-page" href="profile.php"><li>Profile</li></a>
                 <a class="nav-item" href="logout.php"><li>Log Out</li></a>
             <?php else : ?>
                 <a class="nav-item" href="login.php"><li>Log In</li></a>
