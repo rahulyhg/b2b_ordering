@@ -150,7 +150,7 @@ if(isset($_POST['submit-settings'])) {
 
 											<div class="form-item col-md-7">
 												<label for="name">company address:</label><br>
-												<input class="col-md-12" type="text" name="company" value="<?php echo $email; ?>">
+												<input class="col-md-12" type="text" name="address" value="<?php echo $address; ?>">
 											</div>
 
 											<div class="form-item col-md-7">

@@ -6,8 +6,9 @@ require_once 'DB.class.php';
     // Check to see if a name exists.
     // This is called during registration to make sure all names are unique.
     public function checkExists($name) {
-      $result = mysql_query("select id from products where name='$name'");
-        if(mysql_num_rows($result) == 0) {
+      $db = new DB();
+      $result = mysqli_query($db->connect(), "select id from products where name='$name'");
+        if(mysqli_num_rows($result) == 0) {
           return false;
         } else {
           return true;
@@ -27,9 +28,9 @@ require_once 'DB.class.php';
     // Returns a Product object. Takes the category as an input
     public function getByCategory($category) {
       $db = new DB();
-      $result = $db->select('products', "category = $category");
+      $result = $db->select('products', "category = '$category'");
 
-      return new Product($result);
+      return $result;
     }
   }
 
