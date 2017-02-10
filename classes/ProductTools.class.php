@@ -24,13 +24,26 @@ require_once 'DB.class.php';
       return new Product($result);
     }
 
+    public function getByName($name) {
+      $db = new DB();
+      $result = $db->select('products', "name = '$name'");
+
+      return new Product($result);
+    }
+
     // Get all products by Category
     // Returns a Product object. Takes the category as an input
     public function getByCategory($category) {
+      $resultArray = Array();
       $db = new DB();
       $result = $db->select('products', "category = '$category'");
 
-      return $result;
+      foreach ($result as $item) {
+        $item = new Product($item);
+        array_push($resultArray, $item);
+      }
+
+      return $resultArray;
     }
   }
 

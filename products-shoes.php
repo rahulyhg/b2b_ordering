@@ -5,6 +5,8 @@
   $currentCategory = "Shoes"; // Set catergory variable
   $productTools = new productTools(); // Create new instance of productTools
   $products = $productTools->getByCategory($currentCategory);
+
+  // print("<pre>".print_r($products,true)."</pre>");
 ?>
 
 <!doctype html>
@@ -54,11 +56,19 @@
     <main>
       <ul>
         <?php
+          // display all products from category
           foreach ($products as $product) {
-            echo "<li>".$product['name']." - $".$product['price']." - ".$product['category']."</li>";
+            // lowercase product name
+            $slug = strtolower($product->name);
+            // remove any spaces in product name
+            $slug = str_replace(' ', '_', $slug);
+            echo "<a href=\"single-item.php?category=$currentCategory&product=$slug\">
+                    <li>".$product->name." - $".$product->price." - ".$product->category."</li>
+                  </a>";
           }
         ?>
     </ul>
+
     </main>
 
   </body>

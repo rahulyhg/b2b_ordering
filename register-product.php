@@ -5,12 +5,14 @@
   $name = "";
   $price = "";
   $category = "";
+  $description = "";
   $error = "";
 
   if(isset($_POST['submit-form'])) {
     $name = $_POST['name'];
     $price = $_POST['price'];
     $category = $_POST['category'];
+    $description = $_POST['description'];
 
     // Initalize variables for form validation
     $success = true;
@@ -26,6 +28,7 @@
       $data['name'] = $name;
       $data['price'] = $price;
       $data['category'] = $category;
+      $data['description'] = $description;
 
       // create the new product to the database
       $newProduct = new Product($data);
@@ -63,6 +66,8 @@
         <option value="Sweaters">Sweaters</option>
         <option value="Jackets">Jackets</option>
       </select> <br>
+      Description:<br>
+      <textarea name="description" value="<?php echo $description; ?>"></textarea> <br>
       <input type="submit" name="submit-form" value="Register Product">
     </form>
 

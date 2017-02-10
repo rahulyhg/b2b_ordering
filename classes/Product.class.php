@@ -8,6 +8,7 @@ class Product {
   public $name;
   public $price;
   public $category;
+  public $description;
 
   // Constructor is called whenever a new object is created.
   // Takes an associative array with the DB row as an agrument
@@ -16,6 +17,7 @@ class Product {
     $this->name = (isset($data['name'])) ? $data['name'] : "";
     $this->price = (isset($data['price'])) ? $data['price'] : "";
     $this->category = (isset($data['category'])) ? $data['category'] : "";
+    $this->description = (isset($data['description'])) ? $data['description'] : "";
   }
 
   public function save($isNew = false) {
@@ -27,7 +29,8 @@ class Product {
       $data = array(
         "name" => "'$this->name'",
         "price" => "'$this->price'",
-        "category" => "'$this->category'"
+        "category" => "'$this->category'",
+        "description" => "'$this->description'"
       );
 
       $db->update($data, 'products', 'id = '.$this->$id);
@@ -36,7 +39,8 @@ class Product {
       $data = array (
         "name" => "'$this->name'",
         "price" => "'$this->price'",
-        "category" => "'$this->category'"
+        "category" => "'$this->category'",
+        "description" => "'$this->description'"
       );
 
       $this->id = $db->insert($data, 'products');
