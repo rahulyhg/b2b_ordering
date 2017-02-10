@@ -18,6 +18,8 @@ CREATE TABLE `products` (
   `price` decimal(4,2) NOT NULL,
   `category` varchar(50) NOT NULL,
   `description` varchar(400) NOT NULL,
+  `image` varchar(150) NOT NULL,
+  `stock` varchar(50) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;

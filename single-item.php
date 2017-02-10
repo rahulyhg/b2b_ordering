@@ -25,6 +25,7 @@
   </head>
   <body>
     <?= "<h1>$queried_product</h1>"; ?>
+    <?= "<img src=\"$product->image\" />"  ?>
     <?= "<h3>$queried_category - $product->price</h3>"; ?>
     <?= "<p>$product->description</p>"; ?>
   </body>

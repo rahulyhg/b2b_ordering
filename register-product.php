@@ -6,6 +6,9 @@
   $price = "";
   $category = "";
   $description = "";
+  $image = "";
+  $path = "";
+  $stock = "";
   $error = "";
 
   if(isset($_POST['submit-form'])) {
@@ -13,6 +16,13 @@
     $price = $_POST['price'];
     $category = $_POST['category'];
     $description = $_POST['description'];
+    $stock = $_POST['stock'];
+
+    // Image Variables
+    $image = $_FILES['image'];
+    $image_ext = pathinfo($image['name'])['extension'];
+    $imagename = 'product_'.str_replace(' ','_',$name) . '.' . $image_ext;
+    $path = 'assets/img/'.basename(strtolower($imagename));
 
     // Initalize variables for form validation
     $success = true;
@@ -23,12 +33,19 @@
       $success = false;
     }
 
+    // Move uploaded file to our own directory
+    if(!move_uploaded_file($image['tmp_name'], $path)) {
+      $success = false;
+    }
+
     if($success) {
       // Prepare the data for saving in a new product object
       $data['name'] = $name;
       $data['price'] = $price;
       $data['category'] = $category;
       $data['description'] = $description;
+      $data['image'] = $path;
+      $data['stock'] = $stock;
 
       // create the new product to the database
       $newProduct = new Product($data);
@@ -57,7 +74,7 @@
   <body>
     <?php echo ($error != "") ? $error : ""; ?>
 
-    <form action="register-product.php" method="post">
+    <form action="register-product.php" method="post" enctype="multipart/form-data">
       Name: <input type="text" name="name" value="<?php echo $name; ?>"> <br>
       Price: <input type="text" name="price" value="<?php echo $price; ?>"> <br>
       Category:
@@ -68,6 +85,18 @@
       </select> <br>
       Description:<br>
       <textarea name="description" value="<?php echo $description; ?>"></textarea> <br>
+      Image:<br>
+      <input type="file" name="image"><br>
+      Stock: <br>
+      <select name="stock">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select><br>
       <input type="submit" name="submit-form" value="Register Product">
     </form>
 
