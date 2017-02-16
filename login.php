@@ -2,6 +2,7 @@
 //login.php
 
 require_once 'includes/global.inc.php';
+$currentPage = 'Log In';
 
 $error = "";
 $username = "";
@@ -30,6 +31,10 @@ if(isset($_POST['submit-login'])) {
 	<link rel="stylesheet" href="/css/styles.min.css">
 </head>
 <body>
+	<!-- HEADER -->
+	<?php require_once 'components/header.php'; ?>
+	<br>
+
 	<?php
 		if($error != "") {
 	    	echo $error."<br/>";

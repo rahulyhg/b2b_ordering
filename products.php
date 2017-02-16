@@ -1,5 +1,7 @@
 <?php
   require_once 'includes/global.inc.php';
+
+  $currentPage = "Products";
 ?>
 
 <!doctype html>
@@ -19,33 +21,7 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <div class="container">
-        <div class="row nav-container ">
-          <div class="nav-logo col-lg-2">
-            <img class="logo" src="/images/nike_swoosh.svg" alt="">
-          </div>
-          <!-- NAVIGATION -->
-          <ul class="header-nav col-lg-10">
-            <a href="index.php" class="nav-item"><li>orders</li></a>
-            <a href="products.php" class="nav-item current-page"><li>products</li></a>
-            <a href="#" class="nav-item"><li>create order</li></a>
-            <a href="#" class="nav-item"><li>invoices</li></a>
-            <!-- Log In Form -->
-            <?php if(isset($_SESSION['logged_in'])) : ?>
-                <?php $user = unserialize($_SESSION['user']); ?>
-                <!-- <h1>Hello, <?php echo $user->username; ?>!</h1> -->
-                <a class="nav-item" href="profile.php"><li>Profile</li></a>
-                <a class="nav-item" href="logout.php"><li>Log Out</li></a>
-            <?php else : ?>
-                <!-- <h1>You are not logged in.</h1> -->
-                <a class="nav-item" href="login.php"><li>Log In</li></a>
-                <a class="nav-item" href="register-user.php"><li href="register-user.php">Register</li></a>
-            <?php endif; ?>
-          </ul>
-        </div>
-      </div>
-    </header>
+    <?php require_once 'components/header.php'; ?>
 
     <!-- HERO SECTION -->
     <section>
@@ -94,23 +70,8 @@
       </div>
     </section>
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5 copyright-text">
-            <p>All content from Nike.com - Used for Educational purposes</p>
-          </div>
-          <div class="col-md-2 footer-logo-ctn">
-            <img class="footer-logo" src="/images/white_nike_swoosh.svg" alt="">
-          </div>
-          <div class="col-md-5 footer-social">
-            <img class="footer-social-icon" src="/images/instagram.svg" alt="">
-            <img class="footer-social-icon" src="/images/twitter.svg" alt="">
-            <img class="footer-social-icon" src="/images/facebook.svg" alt="">
-          </div>
-        </div>
-      </div>
-    </footer>
+    <!-- Footer -->
+    <?php require_once 'components/footer.php'; ?>
 
     <script src="js/index.min.js" charset="utf-8"></script>
   </body>

@@ -1,5 +1,6 @@
 <?php
 require_once 'includes/global.inc.php';
+$currentPage = "Profile";
 
 //check to see if they're logged in
 if(!isset($_SESSION['logged_in'])) {
@@ -58,32 +59,7 @@ if(isset($_POST['submit-settings'])) {
   </head>
   <body>
 		<!-- HEADER -->
-    <header>
-      <div class="container">
-        <div class="row nav-container ">
-          <div class="nav-logo col-lg-2">
-            <img class="logo" src="/images/nike_swoosh.svg" alt="">
-          </div>
-					<!-- NAVIGATION -->
-          <ul class="header-nav col-lg-10">
-            <a href="index.php" class="nav-item"><li>orders</li></a>
-            <a href="products.php" class="nav-item"><li>products</li></a>
-            <a href="#" class="nav-item"><li>create order</li></a>
-            <a href="#" class="nav-item"><li>invoices</li></a>
-            <!-- Log In Form -->
-            <?php if(isset($_SESSION['logged_in'])) : ?>
-                <?php $user = unserialize($_SESSION['user']); ?>
-                <!-- <h1>Hello, <?php echo $user->username; ?>!</h1> -->
-                <a class="nav-item current-page" href="profile.php"><li>Profile</li></a>
-                <a class="nav-item" href="logout.php"><li>Log Out</li></a>
-            <?php else : ?>
-                <a class="nav-item" href="login.php"><li>Log In</li></a>
-                <a class="nav-item" href="register-user.php"><li href="register-user.php">Register</li></a>
-            <?php endif; ?>
-          </ul>
-        </div>
-      </div>
-    </header>
+    <?php require_once 'components/header.php'; ?>
 
 		<!-- HERO SECTION -->
     <section>
