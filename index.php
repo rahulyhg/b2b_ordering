@@ -48,98 +48,97 @@
     <section>
       <!-- ORDER CARDS -->
       <div class="container">
-        <!-- CARD ROW - STATIC ROW ONE -->
-        <div class="row">
-          <div class="card-ctn col-sm-3">
-            <div class="row">
-              <div class="card col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="card-details col-lg-12">
+        <!-- CARD ROW  -->
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
+              <div class="card col-xs-12">
+                <div class="card-details col-xs-10 col-xs-offset-2 col-md-12 col-md-offset-0">
                   <span class="card-label">order total:</span>
                   <span class="card-detail">$1 520.65 CAD</span>
                 </div>
-                <div class="card-details col-lg-12">
+                <div class="card-details col-xs-10 col-xs-offset-2 col-md-12 col-md-offset-0">
                   <span class="card-label">order placed:</span>
                   <span class="card-detail">January 4, 2017</span>
                 </div>
-                <div class="card-details col-lg-12">
+                <div class="card-details col-xs-10 col-xs-offset-2 col-md-12 col-md-offset-0">
                   <span class="card-label">order number:</span>
                   <span class="card-detail">709-1264864-509</span>
                 </div>
-                <div class="slide-up"></div>
-                <button class="btn card-btn">invoice</button>
-              </div>
-            </div>
-          </div>
-          <div class="card-ctn col-sm-3">
-            <div class="row">
-              <div class="card col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="card-details col-lg-12">
-                  <span class="card-label">order total:</span>
-                  <span class="card-detail">$1 520.65 CAD</span>
-                </div>
-                <div class="card-details col-lg-12">
-                  <span class="card-label">order placed:</span>
-                  <span class="card-detail">January 4, 2017</span>
-                </div>
-                <div class="card-details col-lg-12">
-                  <span class="card-label">order number:</span>
-                  <span class="card-detail">709-1264864-509</span>
-                </div>
-                <div class="card-details">
-                  <button class="btn card-btn">invoice</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-ctn col-sm-3">
-            <div class="row">
-              <div class="card col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="card-details col-lg-12">
-                  <span class="card-label">order total:</span>
-                  <span class="card-detail">$1 520.65 CAD</span>
-                </div>
-                <div class="card-details col-lg-12">
-                  <span class="card-label">order placed:</span>
-                  <span class="card-detail">January 4, 2017</span>
-                </div>
-                <div class="card-details col-lg-12">
-                  <span class="card-label">order number:</span>
-                  <span class="card-detail">709-1264864-509</span>
-                </div>
-                <div class="card-details">
-                  <button class="btn card-btn">invoice</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-ctn col-sm-3">
-            <div class="row">
-              <div class="card col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="card-details col-lg-12">
-                  <span class="card-label">order total:</span>
-                  <span class="card-detail">$1 520.65 CAD</span>
-                </div>
-                <div class="card-details col-lg-12">
-                  <span class="card-label">order placed:</span>
-                  <span class="card-detail">January 4, 2017</span>
-                </div>
-                <div class="card-details col-lg-12">
-                  <span class="card-label">order number:</span>
-                  <span class="card-detail">709-1264864-509</span>
-                </div>
-                <div class="card-details">
-                  <button class="btn card-btn">invoice</button>
-                </div>
-              </div>
-            </div>
-          </div>
 
+                <button href="#" class="card-button">
+                  <span class="btn-text">invoice</span>
+                </button>
+              </div>
+            </div>
+            <div class="card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
+              <div class="card col-xs-12">
+                <div class="card-details col-xs-10 col-xs-offset-2 col-md-12 col-md-offset-0">
+                  <span class="card-label">order total:</span>
+                  <span class="card-detail">$1 520.65 CAD</span>
+                </div>
+                <div class="card-details col-xs-10 col-xs-offset-2 col-md-12 col-md-offset-0">
+                  <span class="card-label">order placed:</span>
+                  <span class="card-detail">January 4, 2017</span>
+                </div>
+                <div class="card-details col-xs-10 col-xs-offset-2 col-md-12 col-md-offset-0">
+                  <span class="card-label">order number:</span>
+                  <span class="card-detail">709-1264864-509</span>
+                </div>
+
+                <button href="#" class="card-button">
+                  <span class="btn-text">invoice</span>
+                </button>
+              </div>
+            </div>
+            <div class="card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
+              <div class="card col-xs-12">
+                <div class="card-details col-xs-10 col-xs-offset-2 col-md-12 col-md-offset-0">
+                  <span class="card-label">order total:</span>
+                  <span class="card-detail">$1 520.65 CAD</span>
+                </div>
+                <div class="card-details col-xs-10 col-xs-offset-2 col-md-12 col-md-offset-0">
+                  <span class="card-label">order placed:</span>
+                  <span class="card-detail">January 4, 2017</span>
+                </div>
+                <div class="card-details col-xs-10 col-xs-offset-2 col-md-12 col-md-offset-0">
+                  <span class="card-label">order number:</span>
+                  <span class="card-detail">709-1264864-509</span>
+                </div>
+
+                <button href="#" class="card-button">
+                  <span class="btn-text">invoice</span>
+                </button>
+              </div>
+            </div>
+            <div class="card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
+              <div class="card col-xs-12">
+                <div class="card-details col-xs-10 col-xs-offset-2 col-md-12 col-md-offset-0">
+                  <span class="card-label">order total:</span>
+                  <span class="card-detail">$1 520.65 CAD</span>
+                </div>
+                <div class="card-details col-xs-10 col-xs-offset-2 col-md-12 col-md-offset-0">
+                  <span class="card-label">order placed:</span>
+                  <span class="card-detail">January 4, 2017</span>
+                </div>
+                <div class="card-details col-xs-10 col-xs-offset-2 col-md-12 col-md-offset-0">
+                  <span class="card-label">order number:</span>
+                  <span class="card-detail">709-1264864-509</span>
+                </div>
+
+                <button href="#" class="card-button">
+                  <span class="btn-text">invoice</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
     </section>
 
     <!-- Footer -->
-    <?php require_once 'components/footer.php'; ?>
+    <?php //require_once 'components/footer.php'; ?>
 
     <script src="js/index.min.js" charset="utf-8"></script>
   </body>

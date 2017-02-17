@@ -1,6 +1,10 @@
 @import "utilities/grid.scss";      // Bootstrap grid & normalize.css
 @import "utilities/colors.scss";    // Color Variables
 
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
 // ----- Default Styles
 body {
   background-color: #f5f5f5;
