@@ -3,7 +3,7 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 230px;
   margin-top: 20px;
 }
 
@@ -11,7 +11,7 @@
 .profile-bar { background-color: #f4e4a9; }
 .products-bar { background-color: #d8e1d8; }
 .hero-bar {
-  height: 375px;
+  height: 200px;
   top: 220px;
   width: 100%;
   position: absolute;
@@ -36,3 +36,30 @@
 .order-image { background-image: url('../images/order_hero_image.jpg'); }
 .profile-image { background-image: url('../images/profile_hero_image.jpg'); }
 .products-image { background-image: url('../images/products_hero_image.jpg'); }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+  .hero-image {
+    height: 300px;
+  }
+  .hero-bar {
+    height: 270px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+  .hero-image {
+    height: 400px;
+  }
+  .hero-bar {
+    height: 370px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+  .hero-bar {
+    height: 385px;
+  }
+}

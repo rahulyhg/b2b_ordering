@@ -26,16 +26,16 @@
       <div class="container">
         <!-- HERO IMAGE -->
         <div class="row">
-          <div class="hero-image order-image col-lg-12">
+          <div class="hero-image order-image col-md-10 col-md-offset-1 col-lg-12 col-lg-offset-0">
           </div>
         </div>
         <!-- HERO BORDER -->
         <div class="row">
-          <div class="hero-border col-lg-6 col-md-4"></div>
+          <div class="hero-border col-md-4 col-md-offset-1 col-lg-6 col-lg-offset-0"></div>
         </div>
         <!-- HERO HEADING -->
         <div class="row">
-          <div class="hero-heading-container col-lg-6">
+          <div class="hero-heading-container col-md-offset-1 col-lg-6 col-lg-offset-0">
             <h2 class="hero-heading">ORDERS</h2>
           </div>
         </div>
