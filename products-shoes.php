@@ -62,7 +62,7 @@
             $slug = strtolower($product->name);
             // remove any spaces in product name
             $slug = str_replace(' ', '_', $slug);
-            echo "<a href=\"single-item.php?category=$currentCategory&product=$slug\">
+            echo "<a href=\"item.php?category=$currentCategory&product=$slug\">
                     <li>".$product->name." - $".$product->price." - ".$product->category."</li>
                   </a>";
           }

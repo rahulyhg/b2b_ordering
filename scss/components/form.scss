@@ -42,11 +42,13 @@ input[type="password"] {
 select {
   border-radius: 0;
   border: 0;
-  background: #333;
+  background-image: url('/assets/select_bg.svg');
+  background-size: cover;
+  background-position: bottom;
   color: #FFF;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 5px 30px 5px 30px;
+  padding: 15px 30px 15px 30px;
   -webkit-appearance: none;
   text-align: center;
 }

@@ -1,5 +1,22 @@
 <?php
   require_once 'includes/global.inc.php';
+  $currentPage = '';
+
+
+    $queried_category = $_GET['category'];
+    // Format String
+    $queried_category = str_replace('_', ' ', $queried_category);
+    $queried_category = ucwords($queried_category);
+
+    $queried_product = $_GET['product'];
+    // Format String
+    $queried_product = str_replace('_', ' ', $queried_product);
+    $queried_product = ucwords($queried_product);
+
+    // Creata of product tools class
+    $productTools = new ProductTools();
+    // Grab product by name from DB
+    $product = $productTools->getByName($queried_product);
 ?>
 
 <!doctype html>
@@ -18,124 +35,84 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <div class="container">
-        <div class="row nav-container ">
-          <div class="nav-logo col-lg-2">
-            <img class="logo" src="/images/nike_swoosh.svg" alt="">
-          </div>
-          <!-- NAVIGATION -->
-          <ul class="header-nav col-lg-10">
-            <a href="index.php" class="nav-item"><li>orders</li></a>
-            <a href="products.php" class="nav-item"><li>products</li></a>
-            <a href="#" class="nav-item"><li>create order</li></a>
-            <a href="#" class="nav-item"><li>invoices</li></a>
-            <!-- Log In Form -->
-            <?php if(isset($_SESSION['logged_in'])) : ?>
-                <?php $user = unserialize($_SESSION['user']); ?>
-                <!-- <h1>Hello, <?php echo $user->username; ?>!</h1> -->
-                <a class="nav-item" href="profile.php"><li>Profile</li></a>
-                <a class="nav-item" href="logout.php"><li>Log Out</li></a>
-            <?php else : ?>
-                <a class="nav-item" href="login.php"><li>Log In</li></a>
-                <a class="nav-item" href="register-user.php"><li href="register-user.php">Register</li></a>
-            <?php endif; ?>
-          </ul>
-        </div>
-      </div>
-    </header>
+    <?php require_once 'components/header.php'; ?>
 
-    <!-- ITEM -->
-    <section>
+    <!-- Product Container
+    ----------------------->
+    <main>
       <div class="container">
         <div class="row">
-          <div class="item-image col-lg-4 col-lg-offset-1">
-            <!-- Main product image -->
-            <div class="row">
-              <img class="image col-lg-12 col-md-12" src="/images/parka_main.jpg" alt="">
-            </div>
-            <!-- Secondary product images -->
-            <div class="row">
-              <img class="secondary-images col-lg-6" src="/images/parka_secondary.jpg" alt="">
-              <img class="secondary-images col-lg-6" src="/images/parka_secondary.jpg" alt="">
-            </div>
+
+          <!-- Product Image -->
+          <div class="product-image col-xs-12 col-md-6 col-md-offset-0">
+            <img src=<?= "$product->image" ?> alt="">
           </div>
 
-          <div class="item-content col-lg-6">
-            <div class="row">
-              <div class="col-lg-10 col-lg-offset-1">
-                <div class="row">
-                  <!-- HEADING -->
-                  <div class="product-heading col-sm-12">
-                    <h2>nike sportswear tech fleece</h2>
-                  </div>
-                  <!-- PRICE -->
-                  <div class="product-price col-sm-12">
-                    <p><span class="bold">$150</span> - Free shipping and hassle free returns</p>
-                  </div>
-                  <!-- DESCRIPTION -->
-                  <div class="product-description col-sm-8">
-                    <p>With a thicker, 3mm construction, the Nike Sportswear Tech Fleece Men's Parka combines cold weather comfort and urban utility</p>
-                  </div>
-                  <!-- CALLOUT -->
-                  <div class="callout col-sm-10">
-                    <p>premium warmth.<br>enhanced coverage.</p>
-                  </div>
-                  <!-- ORDER  -->
-                  <div class="col-sm-10">
-                    <form class="order-form row">
-                      <div class="col-sm-3">
-                        <select class="" name="" id="">
-                          <option value="0">size</option>
-                          <option value="">small</option>
-                          <option value="">medium</option>
-                          <option value="">large</option>
-                          <option value="">x-large</option>
-                        </select>
-                      </div>
+          <!-- Product Infomation
+          ----------------------->
+          <div class="product-info-container col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0">
 
-                      <div class="col-sm-3 col-sm-offset-1">
-                        <select class="qty-select" class="" name="" id="">
-                          <option value="0">QTY</option>
-                          <option value="">1</option>
-                          <option value="">2</option>
-                          <option value="">3</option>
-                          <option value="">4</option>
-                        </select>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <button class="btn --red order-btn col-sm-12">add to order</button>
-                    </div>
-                  </div>
-                </div>
+            <!-- Product Title -->
+            <div class="row">
+              <div class="product-heading col-xs-12">
+                <h2><?= $queried_product ?></h2>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5 copyright-text">
-            <p>All content from Nike.com - Used for Educational purposes</p>
-          </div>
-          <div class="col-md-2 footer-logo-ctn">
-            <img class="footer-logo" src="/images/white_nike_swoosh.svg" alt="">
-          </div>
-          <div class="col-md-5 footer-social">
-            <img class="footer-social-icon" src="/images/instagram.svg" alt="">
-            <img class="footer-social-icon" src="/images/twitter.svg" alt="">
-            <img class="footer-social-icon" src="/images/facebook.svg" alt="">
+            <!-- Product Price -->
+            <div class="row">
+              <div class="product-price col-xs-12">
+                <p><span class="bold"><?= $product->price ?></span> - Free shipping and hassle free returns</p>
+              </div>
+            </div>
+
+            <!-- Product About -->
+            <div class="row">
+              <div class="product-description col-xs-12">
+                <p><?= $product->description ?></p>
+              </div>
+            </div>
+
+            <!-- Product Callout -->
+            <div class="row">
+              <div class="product-callout col-xs-12">
+                <p>premium warmth.<br>enhanced coverage.</p>
+              </div>
+            </div>
+
+            <!-- Product Size Select -->
+            <div class="row">
+              <select class="product-select col-xs-12" name="">
+                <option value="">Size</option>
+                <option value="">Extra Small</option>
+                <option value="">Small</option>
+                <option value="">Medium</option>
+              </select>
+            </div>
+
+            <!-- Product Quantity -->
+            <div class="row">
+              <select class="product-select col-xs-12" name="">
+                <option value="">Quantity</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+              </select>
+            </div>
+
+            <!-- Product Buy Button -->
+            <div class="row">
+              <button class="product-btn btn --red col-xs-12" type="button" name="button">Buy Now</button>
+            </div>
           </div>
         </div>
+
+
       </div>
-    </footer>
+    </main>
+
+    <!-- Footer -->
+    <?php require_once 'components/footer.php'; ?>
 
     <script src="js/index.min.js" charset="utf-8"></script>
   </body>

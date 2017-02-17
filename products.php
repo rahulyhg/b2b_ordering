@@ -50,7 +50,7 @@
     <section>
       <div class="container-fluid">
         <div class="row">
-          <a href="item.php"><div class="category-container col-lg-12">
+          <a href="products-shoes.php"><div class="category-container col-lg-12">
             <div class="row">
               <div class="col-lg-5 col-lg-offset-1">
                 <img src="/images/shoe.jpg" alt="">
