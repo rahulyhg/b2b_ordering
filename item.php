@@ -13,6 +13,8 @@
     $queried_product = str_replace('_', ' ', $queried_product);
     $queried_product = ucwords($queried_product);
 
+    $stock = $_GET['stock'];
+
     // Creata of product tools class
     $productTools = new ProductTools();
     // Grab product by name from DB
@@ -59,10 +61,17 @@
               </div>
             </div>
 
+            <!-- Product Stock -->
+            <div class="row">
+              <div class="product-stock col-xs-12">
+                <p><span class="bold">Current Stock:</span> <?= $stock; ?></p>
+              </div>
+            </div>
+
             <!-- Product Price -->
             <div class="row">
               <div class="product-price col-xs-12">
-                <p><span class="bold"><?= $product->price ?></span> - Free shipping and hassle free returns</p>
+                <p><span class="bold"><?="$".$product->price ?></span> - Free shipping and hassle free returns</p>
               </div>
             </div>
 
