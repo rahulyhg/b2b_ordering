@@ -1,5 +1,5 @@
 .hero-image {
-  background-color: #FF7043; // leave this in place for DOM load -- fallback
+  background-color: #333; // leave this in place for DOM load -- fallback
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -33,9 +33,9 @@
   text-transform: uppercase;
 }
 
-.order-image { background-image: url('../images/order_hero_image.jpg'); }
-.profile-image { background-image: url('../images/profile_hero_image.jpg'); }
-.products-image { background-image: url('../images/products_hero_image.jpg'); }
+.order-image { background-image: url('../assets/img/order_hero_image.jpg'); }
+.profile-image { background-image: url('../assets/img/profile_hero_image.jpg'); }
+.products-image { background-image: url('../assets/img/products_hero_image.jpg'); }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) {

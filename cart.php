@@ -17,14 +17,13 @@ if(isset($_POST['empty-cart'])) {
     <title></title>
   </head>
   <body>
-    <?php if (isset($_SESSION['cart'])) :
+    <?php if (isset($_SESSION['cart']) && $_SESSION['cart'] > 0) :
       foreach ($_SESSION['cart'] as $item) :
         $name = $item['product']->name;
         $quantity = $item['quantity']; ?>
 
         <?= $name ?>
         <?= $quantity; ?>
-        <?php //var_dump($item); ?>
 
     <?php endforeach; else: ?>
       <?= "There seems to be no products in your cart";  ?>
