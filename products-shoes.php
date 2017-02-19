@@ -64,7 +64,7 @@
             $slug = str_replace(' ', '_', $slug);
             $stock = $product->stock;
 
-            echo "<a href=\"item.php?category=$currentCategory&product=$slug&stock=$stock\">
+            echo "<a href=\"item.php?category=$currentCategory&product=$slug\">
                     <li>".$product->name." - $".$product->price." - ".$product->category."</li>
                   </a>";
           }
