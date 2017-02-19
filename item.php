@@ -2,23 +2,32 @@
   require_once 'includes/global.inc.php';
   $currentPage = '';
 
+  $url_string = 'item.php?category=' . $_GET['category'] . '&product=' . $_GET['product'];
 
-    $queried_category = $_GET['category'];
-    // Format String
-    $queried_category = str_replace('_', ' ', $queried_category);
-    $queried_category = ucwords($queried_category);
+  $queried_category = $_GET['category'];
+  // Format String
+  $queried_category = str_replace('_', ' ', $queried_category);
+  $queried_category = ucwords($queried_category);
 
-    $queried_product = $_GET['product'];
-    // Format String
-    $queried_product = str_replace('_', ' ', $queried_product);
-    $queried_product = ucwords($queried_product);
+  $queried_product = $_GET['product'];
+  // Format String
+  $queried_product = str_replace('_', ' ', $queried_product);
+  $queried_product = ucwords($queried_product);
 
-    $stock = $_GET['stock'];
+  $stock = $_GET['stock'];
+  // Creata of product tools class
+  $productTools = new ProductTools();
+  // Grab product by name from DB
+  $product = $productTools->getByName($queried_product);
 
-    // Creata of product tools class
-    $productTools = new ProductTools();
-    // Grab product by name from DB
-    $product = $productTools->getByName($queried_product);
+  if(isset($_POST['add-to-cart'])) {
+    $cart = new Cart();
+
+    // $stock = $product->stock;
+    $quantity = $_POST['quantity'];
+    $cart->add($product,$quantity);
+
+  }
 ?>
 
 <!doctype html>
@@ -89,30 +98,35 @@
               </div>
             </div>
 
-            <!-- Product Size Select -->
-            <div class="row">
-              <select class="product-select col-xs-12" name="">
-                <option value="">Size</option>
-                <option value="">Extra Small</option>
-                <option value="">Small</option>
-                <option value="">Medium</option>
-              </select>
-            </div>
+            <!-- FORM STARTS HERE
+            ----------------------->
+            <?php // TODO: Add if to check stock level ?>
+            <form class="" action="<?php echo $url_string; ?>" method="post">
+              <!-- Product Size Select -->
+              <div class="row">
+                <select class="product-select col-xs-12" name="">
+                  <option value="">Size</option>
+                  <option value="">Extra Small</option>
+                  <option value="">Small</option>
+                  <option value="">Medium</option>
+                </select>
+              </div>
 
-            <!-- Product Quantity -->
-            <div class="row">
-              <select class="product-select col-xs-12" name="">
-                <option value="">Quantity</option>
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-              </select>
-            </div>
+              <!-- Product Quantity -->
+              <div class="row">
+                <select class="product-select col-xs-12" name="quantity">
+                  <option value="">Quantity</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
 
-            <!-- Product Buy Button -->
-            <div class="row">
-              <button class="product-btn btn --red col-xs-12" type="button" name="button">Buy Now</button>
-            </div>
+              <!-- Product Buy Button -->
+              <div class="row">
+                <button class="product-btn btn --red col-xs-12" type="submit" name="add-to-cart">Add to Cart</button>
+              </div>
+            </form>
           </div>
         </div>
 

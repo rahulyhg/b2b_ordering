@@ -4,6 +4,7 @@ require_once 'classes/Product.class.php';
 require_once 'classes/ProductTools.class.php';
 require_once 'classes/User.class.php';
 require_once 'classes/UserTools.class.php';
+require_once 'classes/Cart.class.php';
 require_once 'classes/DB.class.php';
 
 //connect to the database

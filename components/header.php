@@ -21,7 +21,7 @@
       <div class="container">
         <div class="row nav-container ">
           <div class="nav-logo col-lg-2">
-            <a href="index.php"><img class="logo" src="/images/nike_swoosh.svg" alt=""></a>
+            <a href="index.php"><img class="logo" src="/assets/img/nike_swoosh.svg" alt=""></a>
           </div>
           <!-- NAVIGATION -->
           <ul class="header-nav col-lg-10">
@@ -42,7 +42,7 @@
       <div class="container">
         <div class="row nav-container ">
           <div class="nav-logo col-lg-2">
-            <a href="index.php"><img class="logo" src="/images/nike_swoosh.svg" alt=""></a>
+            <a href="index.php"><img class="logo" src="/assets/img/nike_swoosh.svg" alt=""></a>
           </div>
           <!-- NAVIGATION -->
           <ul class="header-nav col-lg-10">
