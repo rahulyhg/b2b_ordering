@@ -23,13 +23,15 @@
   background-color: #333;
 }
 
-.hero-heading-container {
-  height: 120px;
-}
+// .hero-heading-container {
+//   height: auto;
+// }
 
 .hero-heading {
-  margin-top: 0px;
-  font-size: 70px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  display: inline-block;
+  font-size: 40px;
   text-transform: uppercase;
 }
 
@@ -45,21 +47,33 @@
   .hero-bar {
     height: 270px;
   }
+  .hero-heading {
+    font-size: 50px;
+    margin-top: 15px;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) {
   .hero-image {
-    height: 400px;
+    height: 460px;
   }
   .hero-bar {
-    height: 370px;
+    height: 435px;
+  }
+  .hero-heading {
+    font-size: 55px;
+    margin-top: 15px;
   }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) {
   .hero-bar {
-    height: 385px;
+    height: 455px;
+  }
+  .hero-heading {
+    font-size: 60px;
+    margin-top: 15px;
   }
 }

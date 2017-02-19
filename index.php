@@ -14,19 +14,19 @@
 
     <!-- HERO SECTION -->
     <section>
-      <div class="container">
+      <div class="container-fluid">
         <!-- HERO IMAGE -->
         <div class="row">
-          <div class="hero-image order-image col-md-10 col-md-offset-1 col-lg-12 col-lg-offset-0">
+          <div class="hero-image order-image col-md-12 col-lg-12 col-lg-offset-0">
           </div>
         </div>
         <!-- HERO BORDER -->
         <div class="row">
-          <div class="hero-border col-md-4 col-md-offset-1 col-lg-6 col-lg-offset-0"></div>
+          <div class="hero-border col-md-8 col-lg-6"></div>
         </div>
         <!-- HERO HEADING -->
         <div class="row">
-          <div class="hero-heading-container col-md-offset-1 col-lg-6 col-lg-offset-0">
+          <div class="hero-heading-container col-sm-offset-1 col-md-offset-1 col-lg-6 col-lg-offset-1">
             <h2 class="hero-heading">NEW RELEASES</h2>
           </div>
         </div>

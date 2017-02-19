@@ -25,19 +25,19 @@
 
     <!-- HERO SECTION -->
     <section>
-      <div class="container">
+      <div class="container-fluid">
         <!-- HERO IMAGE -->
         <div class="row">
-          <div class="hero-image products-image col-lg-12">
+          <div class="hero-image products-image col-md-12 col-lg-12 col-lg-offset-0">
           </div>
         </div>
         <!-- HERO BORDER -->
         <div class="row">
-          <div class="hero-border col-lg-6 col-md-4"></div>
+          <div class="hero-border col-md-8 col-lg-6 col-lg-offset-0"></div>
         </div>
         <!-- HERO HEADING -->
         <div class="row">
-          <div class="hero-heading-container col-lg-6">
+          <div class="hero-heading-container col-sm-offset-1 col-md-offset-1 col-lg-6 col-lg-offset-1">
             <h2 class="hero-heading">shop by</h2>
           </div>
         </div>

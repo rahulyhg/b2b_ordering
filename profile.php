@@ -63,10 +63,10 @@ if(isset($_POST['submit-settings'])) {
 
 		<!-- HERO SECTION -->
     <section>
-      <div class="container">
+      <div class="container-fluid">
         <!-- HERO IMAGE -->
         <div class="row">
-          <div class="hero-image profile-image col-lg-12">
+          <div class="hero-image profile-image col-md-12 col-lg-12 col-lg-offset-0">
           </div>
         </div>
         <!-- HERO BORDER -->
@@ -75,7 +75,7 @@ if(isset($_POST['submit-settings'])) {
         </div>
         <!-- HERO HEADING -->
         <div class="row">
-          <div class="hero-heading-container col-lg-6">
+          <div class="hero-heading-container col-sm-offset-1 col-md-offset-1 col-lg-6 col-lg-offset-1">
             <h2 class="hero-heading">PROFILE</h2>
           </div>
         </div>
