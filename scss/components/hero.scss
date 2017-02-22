@@ -4,14 +4,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 230px;
-  margin-top: 20px;
+  z-index: 0;
 }
 
 .order-bar { background-color: #eeeae6; }
 .profile-bar { background-color: #f4e4a9; }
 .products-bar { background-color: #d8e1d8; }
 .hero-bar {
-  height: 200px;
+  height: 170px;
   top: 220px;
   width: 100%;
   position: absolute;
@@ -22,10 +22,6 @@
   height: 15px;
   background-color: #333;
 }
-
-// .hero-heading-container {
-//   height: auto;
-// }
 
 .hero-heading {
   margin-top: 20px;
@@ -45,7 +41,7 @@
     height: 300px;
   }
   .hero-bar {
-    height: 270px;
+    height: 242px;
   }
   .hero-heading {
     font-size: 50px;
@@ -59,7 +55,7 @@
     height: 460px;
   }
   .hero-bar {
-    height: 435px;
+    height: 405px;
   }
   .hero-heading {
     font-size: 55px;
@@ -70,7 +66,7 @@
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) {
   .hero-bar {
-    height: 455px;
+    height: 410px;
   }
   .hero-heading {
     font-size: 60px;
