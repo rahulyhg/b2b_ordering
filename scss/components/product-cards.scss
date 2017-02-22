@@ -8,6 +8,7 @@
   background-color: #f4f4f4;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   height: 280px;
+  text-align: center;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -63,7 +64,7 @@
   background-color: #444;
   border: 0 solid #444;
   bottom: 0;
-  height: 60px;
+  min-height: 60px;
   left: 0;
   position: absolute;
   width: 100%;
@@ -76,8 +77,9 @@
   .title-text {
     color: #FFF;
     letter-spacing: 1px;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
+    padding: 5px 15px;
   }
 }
 

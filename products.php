@@ -1,23 +1,11 @@
 <?php
   require_once 'includes/global.inc.php';
-
-  $currentPage = "Products";
 ?>
 
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Home | Nike Business</title>
-    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="favicons/manifest.json">
-    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#333">
-    <meta name="theme-color" content="#333">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.min.css">
+    <?php require_once 'components/head.php'; ?>
   </head>
   <body>
     <!-- HEADER -->
@@ -46,32 +34,78 @@
       <div class="hero-bar products-bar"></div>
     </section>
 
-    <!-- CATEGORY SECTION -->
+    <!-- Clothing Category Select -->
     <section>
-      <div class="container-fluid">
-        <div class="row">
-          <a href="products-shoes.php"><div class="category-container col-lg-12">
-            <div class="row">
-              <div class="col-lg-5 col-lg-offset-1">
-                <img src="/images/shoe.jpg" alt="">
-              </div>
-              <div class="category-heading-ctn col-lg-5 col-lg-offset-1">
-                <div class="row">
-                  <div class="category-heading col-md-12">
-                    <h2>lastest <br> shoes <br>
-                    <img class="product-arrow" src="/images/arrow.svg" alt="">
-                    </h2>
+      <!-- ORDER CARDS -->
+      <div class="container">
+        <!-- CARD ROW  -->
+        <div class="col-xs-12">
+          <div class="row">
+
+            <a href="products-lifestyleC.php">
+              <div  class="card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
+                <div class="card col-xs-12" style="background-image:url('/assets/img/lifestyleClothing.jpg')">
+                  <!-- Rollover -->
+                  <div class="card-rollover">
+                    <button class="card-rollover-btn btn --red" type="button" name="button">View Products</button>
+                  </div>
+                  <!-- Card Title  -->
+                  <div class="card-title">
+                    <span class="title-text">Lifestyle</span>
                   </div>
                 </div>
               </div>
-            </div>
-          </div></a>
+            </a>
+
+            <a href="item.php?category=Jackets&product=NIKE IMPOSSIBLY LIGHT">
+              <div class="card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
+                <div class="card col-xs-12" style="background-image:url('/assets/img/runningClothing.jpg')">
+                  <!-- Rollover -->
+                  <div class="card-rollover">
+                    <button class="card-rollover-btn btn --red" type="button" name="button">View Products</button>
+                  </div>
+                  <!-- Card Title  -->
+                  <div class="card-title">
+                    <span class="title-text">Running</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="item.php?category=Sweaters&product=Nike THERMA MAX">
+              <div class="card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
+                <div class="card col-xs-12" style="background-image:url('/assets/img/gymClothing.jpg')">
+                  <!-- Rollover -->
+                  <div class="card-rollover">
+                    <button class="card-rollover-btn btn --red" type="button" name="button">View Products</button>
+                  </div>
+                  <!-- Card Title  -->
+                  <div class="card-title">
+                    <span class="title-text">Gym &amp; Training</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="item.php?category=Pants &amp; Tights&product=NIKE ZONAL STRENGTH">
+              <div class="card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
+                <div class="card col-xs-12" style="background-image:url('/assets/img/allClothing.jpg')">
+                  <!-- Rollover -->
+                  <div class="card-rollover">
+                    <button class="card-rollover-btn btn --red" type="button" name="button">View Products</button>
+                  </div>
+                  <!-- Card Title  -->
+                  <div class="card-title">
+                    <span class="title-text">All clothing</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
         </div>
       </div>
     </section>
-
-    <!-- Footer -->
-    <?php require_once 'components/footer.php'; ?>
 
     <script src="js/index.min.js" charset="utf-8"></script>
   </body>

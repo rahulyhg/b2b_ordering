@@ -1,6 +1,5 @@
 <?php
   require_once 'includes/global.inc.php';
-  $currentPage = 'Home';
 ?>
 
 <!doctype html>
@@ -105,7 +104,6 @@
 
           </div>
         </div>
-
       </div>
     </section>
 

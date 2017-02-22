@@ -29,9 +29,10 @@
                 <a href="products.php">clothing</a>
                 <div class="dropdown">
                   <ul class="dropdown-menu">
-                    <a href="#"><li>Sweatshirts</li></a>
-                    <a href="#"><li>Jackets</li></a>
-                    <a href="#"><li>Pants &amp; Tights</li></a>
+                    <a href="products-lifestyleC.php"><li>Lifestyle</li></a>
+                    <a href="#"><li>Running</li></a>
+                    <a href="#"><li>Gym &amp; Training</li></a>
+                    <a href="#"><li>All Clothing</li></a>
                   </ul>
                 </div>
               </li>
@@ -41,9 +42,8 @@
                   <ul class="dropdown-menu">
                     <a href="#"><li>Lifestyle</li></a>
                     <a href="#"><li>Running</li></a>
-                    <a href="#"><li>Gym &amp; Traning</li></a>
-                    <a href="#"><li>Basketball</li></a>
-                    <a href="#"><li>Skateboarding</li></a>
+                    <a href="#"><li>Gym &amp; Training</li></a>
+                    <a href="#"><li>All Clothing</li></a>
                   </ul>
                 </div>
               </li>

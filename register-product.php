@@ -79,9 +79,12 @@
       Price: <input type="text" name="price" value="<?php echo $price; ?>"> <br>
       Category:
       <select name="category">
-        <option value="Shoes">Shoes</option>
-        <option value="Sweaters">Sweaters</option>
-        <option value="Jackets">Jackets</option>
+        <option value="Lifestyle-Shoes">Lifestyle-Shoes</option>
+        <option value="Running-Shoes">Running-Shoes</option>
+        <option value="Training-Shoes">Training-Shoes</option>
+        <option value="Lifestyle-Clothing">Lifestyle-Clothing</option>
+        <option value="Running-Clothing">Running-Clothing</option>
+        <option value="Training-Clothing">Training-Clothing</option>
       </select> <br>
       Description:<br>
       <textarea name="description" value="<?php echo $description; ?>"></textarea> <br>
