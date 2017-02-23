@@ -87,7 +87,7 @@ if(isset($_POST['submit-form'])) {
       <div class="container-fluid">
         <!-- HERO IMAGE -->
         <div class="row">
-          <div class="hero-image profile-image col-xs-12 col-lg-12 col-lg-offset-0">
+          <div class="hero-image register-image col-xs-12 col-lg-12 col-lg-offset-0">
           </div>
         </div>
         <!-- HERO BORDER -->
@@ -102,7 +102,7 @@ if(isset($_POST['submit-form'])) {
         </div>
       </div>
       <!-- HERO BG BAR -->
-      <div class="hero-bar profile-bar"></div>
+      <div class="hero-bar register-bar"></div>
     </section>
 
 		<section class="container">
@@ -166,5 +166,8 @@ if(isset($_POST['submit-form'])) {
 				</div>
 			</div>
 		</section>
+
+		<!-- Footer -->
+    <?php require_once 'components/footer.php'; ?>
 	</body>
 </html>

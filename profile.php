@@ -129,17 +129,9 @@ if(isset($_POST['submit-settings'])) {
 			</div>
 		</section>
 
+		<!-- Footer -->
+    <?php require_once 'components/footer.php'; ?>
+
     <script src="js/index.min.js" charset="utf-8"></script>
   </body>
 </html>
-
-	<!-- <?php echo $message; ?> -->
-	<!-- <form action="profile.php" method="post">
-	E-Mail: <input type="text" value="<?php echo $email; ?>" name="email" /><br/>
-	First Name: <input type="text" value="<?php echo $firstname; ?>" name="firstname" /><br/>
-	Last Name: <input type="text" value="<?php echo $lastname; ?>" name="lastname" /><br/>
-	Company: <input type="text" value="<?php echo $company; ?>" name="company" /><br/>
-	Address: <input type="text" value="<?php echo $address; ?>" name="address" /><br/>
-	E-Mail: <input type="text" value="<?php echo $email; ?>" name="email" /><br/>
-	<input type="submit" value="Update" name="submit-settings" />
-	</form> -->

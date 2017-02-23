@@ -35,6 +35,17 @@ input[type="password"] {
   }
 }
 
+textarea {
+  border-radius: 0;
+  border: 0;
+  background-image: url('/assets/img/select_bg.svg');
+  background-image: url('/assets/img/select_bg.svg');
+  background-size: cover;
+  background-position: bottom;
+  color: #FFF;
+  -webkit-appearance: none;
+}
+
 select {
   border-radius: 0;
   border: 0;

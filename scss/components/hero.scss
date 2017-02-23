@@ -10,6 +10,8 @@
 .order-bar { background-color: #eeeae6; }
 .profile-bar { background-color: #f4e4a9; }
 .products-bar { background-color: #d8e1d8; }
+.register-bar { background-color: #fcc26e; }
+.login-bar { background-color: #dfcdb9; }
 .hero-bar {
   height: 170px;
   top: 220px;
@@ -34,6 +36,8 @@
 .order-image { background-image: url('../assets/img/order_hero_image.jpg'); }
 .profile-image { background-image: url('../assets/img/profile_hero_image.jpg'); }
 .products-image { background-image: url('../assets/img/products_hero_image.jpg'); }
+.register-image { background-image: url('../assets/img/register_hero_image.jpg'); }
+.login-image { background-image: url('../assets/img/login_hero_image.jpg'); }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) {

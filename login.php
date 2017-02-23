@@ -35,7 +35,7 @@ if(isset($_POST['submit-login'])) {
       <div class="container-fluid">
         <!-- HERO IMAGE -->
         <div class="row">
-          <div class="hero-image profile-image col-xs-12 col-lg-12 col-lg-offset-0">
+          <div class="hero-image login-image col-xs-12 col-lg-12 col-lg-offset-0">
           </div>
         </div>
         <!-- HERO BORDER -->
@@ -50,7 +50,7 @@ if(isset($_POST['submit-login'])) {
         </div>
       </div>
       <!-- HERO BG BAR -->
-      <div class="hero-bar profile-bar"></div>
+      <div class="hero-bar login-bar"></div>
     </section>
 
 		<?php
@@ -89,6 +89,9 @@ if(isset($_POST['submit-login'])) {
 				</div>
 			</div>
 		</section>
+
+		<!-- Footer -->
+    <?php require_once 'components/footer.php'; ?>
 
 		<script src="js/index.min.js" charset="utf-8"></script>
 	</body>
