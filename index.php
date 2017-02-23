@@ -42,7 +42,7 @@
         <div class="col-xs-12">
           <div class="row">
 
-            <a href="item.php?category=sweaters&product=NIKE DESTROYER">
+            <a href="item.php?category=Lifestyle-Clothing&product=NIKE DESTROYER">
               <div  class="card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
                 <div class="card col-xs-12" style="background-image:url('/assets/img/featured3.jpg')">
                   <!-- Rollover -->

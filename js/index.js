@@ -1,6 +1,7 @@
 function handleIn() {
   // Get current item dropdown menu
   let dropdown = this.querySelector('.dropdown');
+  // const nav = document.querySelector('.desktop-nav');
   // Add display block
   dropdown.classList.add('trigger-enter');
   // Add opacity
@@ -12,7 +13,7 @@ function handleIn() {
   background.style.setProperty('width', `${dropdownCoords.width}px`);
   background.style.setProperty('height', `${dropdownCoords.height}px`);
   background.style.setProperty('left', `${dropdownCoords.left}px`);
-  background.style.setProperty('top', `${dropdownCoords.top}px`);
+  background.style.setProperty('top', `${77}px`); // HACK: <--- BIG HACK
 }
 
 function handleOut() {

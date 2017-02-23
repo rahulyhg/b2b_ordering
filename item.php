@@ -115,9 +115,16 @@
               <div class="row">
                 <select class="product-select col-xs-12" name="quantity">
                   <option value="">Quantity</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
+                  <option value="10">10</option>
+                  <option value="20">20</option>
+                  <option value="30">30</option>
+                  <option value="40">50</option>
+                  <option value="50">50</option>
+                  <option value="60">60</option>
+                  <option value="70">70</option>
+                  <option value="80">80</option>
+                  <option value="90">90</option>
+                  <option value="100">100</option>
                 </select>
               </div>
 
@@ -128,8 +135,6 @@
             </form>
           </div>
         </div>
-
-
       </div>
     </main>
 
