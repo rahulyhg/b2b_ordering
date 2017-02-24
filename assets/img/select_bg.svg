@@ -1,1 +1,14 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 100"><defs><style>.cls-1{fill:#333;}.cls-2{fill:#f44336;}</style></defs><title>select_bg</title><rect class="cls-1" width="350" height="100"/><polygon class="cls-2" points="350 100 350 48.17 298.17 100 350 100"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 350 100" style="enable-background:new 0 0 350 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#333333;}
+	.st1{fill:#F44336;}
+	.st2{fill:#FFFFFF;}
+</style>
+<title>select_bg</title>
+<rect class="st0" width="350" height="100"/>
+<polygon class="st1" points="350,100 350,48.2 298.2,100 "/>
+<path class="st2" d="M327,84.2l5,5l5-5H327z"/>
+</svg>

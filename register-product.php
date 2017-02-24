@@ -124,7 +124,7 @@
 
                 <div class="form-item col-xs-12">
                   <label for="description">product description:</label><br>
-                  <textarea class="col-xs-12" name="description" value="<?php echo $description; ?>"></textarea> <br>
+                  <textarea class="col-xs-12" name="description" placeholder="" value="<?php echo $description; ?>"></textarea> <br>
                 </div>
 
                 <div class="form-item col-xs-12">
