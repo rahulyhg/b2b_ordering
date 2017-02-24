@@ -7,4 +7,4 @@
 <meta name="theme-color" content="#333">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
-<link rel="stylesheet" href="/css/styles.min.css">
+<link rel="stylesheet" href="/assets/css/styles.min.css">

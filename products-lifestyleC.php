@@ -54,6 +54,6 @@
 
     <!-- Footer -->
     <?php require_once 'components/footer.php'; ?>
-
+    <script src="assets/js/index.min.js" charset="utf-8"></script>
   </body>
 </html>

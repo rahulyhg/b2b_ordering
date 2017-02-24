@@ -17,7 +17,7 @@ gulp.task('styles', function() {
     }))
     .pipe(sourcemaps.write())
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./assets/css'));
 });
 
 gulp.task('scripts', function() {

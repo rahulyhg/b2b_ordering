@@ -92,7 +92,6 @@ if(isset($_POST['submit-login'])) {
 
 		<!-- Footer -->
     <?php require_once 'components/footer.php'; ?>
-
-		<script src="js/index.min.js" charset="utf-8"></script>
+		<script src="assets/js/index.min.js" charset="utf-8"></script>
 	</body>
 </html>
