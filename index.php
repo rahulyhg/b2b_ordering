@@ -5,11 +5,11 @@
 <!doctype html>
 <html>
   <head>
-    <?php require_once 'components/head.php'; ?>
+    <?php require_once './components/head.php'; ?>
   </head>
   <body>
     <!-- HEADER -->
-    <?php require_once 'components/header.php'; ?>
+    <?php require_once './components/header.php'; ?>
 
     <!-- HERO SECTION -->
     <section>
@@ -44,7 +44,7 @@
 
             <a href="item.php?category=Lifestyle-Clothing&product=NIKE DESTROYER">
               <div  class="card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
-                <div class="card col-xs-12" style="background-image:url('/assets/img/featured3.jpg')">
+                <div class="card col-xs-12" style="background-image:url('./assets/img/featured3.jpg')">
                   <!-- Rollover -->
                   <div class="card-rollover">
                     <button class="card-rollover-btn btn --red" type="button" name="button">View Product</button>
@@ -59,7 +59,7 @@
 
             <a href="item.php?category=Jackets&product=NIKE IMPOSSIBLY LIGHT">
               <div class="card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
-                <div class="card col-xs-12" style="background-image:url('/assets/img/featured2.jpg')">
+                <div class="card col-xs-12" style="background-image:url('./assets/img/featured2.jpg')">
                   <!-- Rollover -->
                   <div class="card-rollover">
                     <button class="card-rollover-btn btn --red" type="button" name="button">View Product</button>
@@ -74,7 +74,7 @@
 
             <a href="item.php?category=Sweaters&product=Nike THERMA MAX">
               <div class="card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
-                <div class="card col-xs-12" style="background-image:url('/assets/img/featured1.jpg')">
+                <div class="card col-xs-12" style="background-image:url('./assets/img/featured1.jpg')">
                   <!-- Rollover -->
                   <div class="card-rollover">
                     <button class="card-rollover-btn btn --red" type="button" name="button">View Product</button>
@@ -89,7 +89,7 @@
 
             <a href="item.php?category=Pants &amp; Tights&product=NIKE ZONAL STRENGTH">
               <div class="card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
-                <div class="card col-xs-12" style="background-image:url('/assets/img/featured4.jpg')">
+                <div class="card col-xs-12" style="background-image:url('./assets/img/featured4.jpg')">
                   <!-- Rollover -->
                   <div class="card-rollover">
                     <button class="card-rollover-btn btn --red" type="button" name="button">View Product</button>
@@ -109,6 +109,6 @@
 
     <!-- Footer -->
     <?php require_once 'components/footer.php'; ?>
-    <script src="assets/js/index.min.js" charset="utf-8"></script>
+    <script src="./assets/js/index.min.js" charset="utf-8"></script>
   </body>
 </html>

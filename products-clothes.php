@@ -44,7 +44,7 @@
 
             <a href="products-lifestyleC.php">
               <div  class="card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
-                <div class="card col-xs-12" style="background-image:url('/assets/img/lifestyleClothing.jpg')">
+                <div class="card col-xs-12" style="background-image:url('./assets/img/lifestyleClothing.jpg')">
                   <!-- Rollover -->
                   <div class="card-rollover">
                     <button class="card-rollover-btn btn --red" type="button" name="button">View Products</button>
@@ -59,7 +59,7 @@
 
             <a href="#">
               <div class="card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
-                <div class="card col-xs-12" style="background-image:url('/assets/img/runningClothing.jpg')">
+                <div class="card col-xs-12" style="background-image:url('./assets/img/runningClothing.jpg')">
                   <!-- Rollover -->
                   <div class="card-rollover">
                     <button class="card-rollover-btn btn --red" type="button" name="button">View Products</button>
@@ -74,7 +74,7 @@
 
             <a href="#">
               <div class="card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
-                <div class="card col-xs-12" style="background-image:url('/assets/img/gymClothing.jpg')">
+                <div class="card col-xs-12" style="background-image:url('./assets/img/gymClothing.jpg')">
                   <!-- Rollover -->
                   <div class="card-rollover">
                     <button class="card-rollover-btn btn --red" type="button" name="button">View Products</button>
@@ -89,7 +89,7 @@
 
             <a href="#">
               <div class="card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
-                <div class="card col-xs-12" style="background-image:url('/assets/img/allClothing.jpg')">
+                <div class="card col-xs-12" style="background-image:url('./assets/img/allClothing.jpg')">
                   <!-- Rollover -->
                   <div class="card-rollover">
                     <button class="card-rollover-btn btn --red" type="button" name="button">View Products</button>

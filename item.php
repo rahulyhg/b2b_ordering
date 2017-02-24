@@ -34,7 +34,7 @@
   <head>
     <?php require_once 'components/head.php'; ?>
   </head>
-  
+
   <body>
     <!-- HEADER -->
     <?php require_once 'components/header.php'; ?>
@@ -47,7 +47,7 @@
 
           <!-- Product Image -->
           <div class="product-image col-xs-12 col-md-6 col-md-offset-0">
-            <img src=<?= "$product->image" ?> alt="<?= $product->name ?>">
+            <img src=<?= "./$product->image" ?> alt="<?= $product->name ?>">
           </div>
 
           <!-- Product Infomation

@@ -53,7 +53,7 @@
               </div>
               <!-- Item Image -->
               <div class="row">
-                <div class="cart-item-image col-xs-12" style="background-image:url(<?= $image ?>);">
+                <div class="cart-item-image col-xs-12" style="background-image:url(<?= "./".$image ?>);">
                   <div class="card-rollover">
                     <button class="card-rollover-btn btn --red" type="button" name="button">View Product</button>
                   </div>

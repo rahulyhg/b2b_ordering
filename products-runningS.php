@@ -32,7 +32,7 @@
 
                 echo "<a href=\"item.php?category=$currentCategory&product=$slug\">
                   <div  class=\"card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0\">
-                    <div class=\"card col-xs-12\" style=\"background-image:url('$product->image')\">
+                    <div class=\"card col-xs-12\" style=\"background-image:url('./$product->image')\">
                       <!-- Rollover -->
                       <div class=\"card-rollover\">
                         <button class=\"card-rollover-btn btn --red\" type=\"button\" name=\"button\">View Product</button>
