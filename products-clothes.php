@@ -26,7 +26,7 @@
         <!-- HERO HEADING -->
         <div class="row">
           <div class="hero-heading-container col-sm-offset-1 col-md-offset-1 col-lg-6 col-lg-offset-1">
-            <h2 class="hero-heading">shop by</h2>
+            <h2 class="hero-heading">CLOTHING</h2>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@
               </div>
             </a>
 
-            <a href="item.php?category=Jackets&product=NIKE IMPOSSIBLY LIGHT">
+            <a href="#">
               <div class="card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
                 <div class="card col-xs-12" style="background-image:url('/assets/img/runningClothing.jpg')">
                   <!-- Rollover -->
@@ -72,7 +72,7 @@
               </div>
             </a>
 
-            <a href="item.php?category=Sweaters&product=Nike THERMA MAX">
+            <a href="#">
               <div class="card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
                 <div class="card col-xs-12" style="background-image:url('/assets/img/gymClothing.jpg')">
                   <!-- Rollover -->
@@ -87,7 +87,7 @@
               </div>
             </a>
 
-            <a href="item.php?category=Pants &amp; Tights&product=NIKE ZONAL STRENGTH">
+            <a href="#">
               <div class="card-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
                 <div class="card col-xs-12" style="background-image:url('/assets/img/allClothing.jpg')">
                   <!-- Rollover -->

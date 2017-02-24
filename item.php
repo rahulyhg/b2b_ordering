@@ -55,7 +55,7 @@
 
           <!-- Product Image -->
           <div class="product-image col-xs-12 col-md-6 col-md-offset-0">
-            <img src=<?= "$product->image" ?> alt="">
+            <img src=<?= "$product->image" ?> alt="<?= $product->name ?>">
           </div>
 
           <!-- Product Infomation
