@@ -1,3 +1,4 @@
+// DESKTOP NAV
 function handleIn() {
   // Get current item dropdown menu
   let dropdown = this.querySelector('.dropdown');
@@ -27,3 +28,14 @@ var background = document.querySelector('.dropdownBackground');
 
 menuTriggers.forEach(trigger => trigger.addEventListener('mouseenter', handleIn));
 menuTriggers.forEach(trigger => trigger.addEventListener('mouseleave', handleOut));
+
+// MOBILE NAV
+function slideNav() {
+  const slideNavContainer = document.querySelector('.mobile-nav-container');
+  slideNavContainer.classList.toggle('nav-active');
+  const navIcon = document.querySelector('.nav-icon');
+  navIcon.classList.toggle('nav-white');
+}
+
+const navIcon = document.querySelector('.nav-icon');
+navIcon.addEventListener('click', slideNav);

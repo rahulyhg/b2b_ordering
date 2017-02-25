@@ -64,8 +64,8 @@
       <!-- Mobile Nav
       ----------------->
       <div class="mobile-nav hidden-md hidden-lg">
-        <img class="cart-icon" src="./assets/img/shopping_cart.svg" alt="Shopping Cart">
-        <img class="nav-icon" src="./assets/img/menu.svg" alt="Mobile Navigation Icon">
+        <a href="cart.php"><img class="cart-icon" src="./assets/img/shopping_cart.svg" alt="Shopping Cart"></a>
+        <svg class="nav-icon nav-black" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"/></svg>
       </div>
     </nav>
   </div>

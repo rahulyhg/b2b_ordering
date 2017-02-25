@@ -21,7 +21,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src('js/index.js')
+  return gulp.src('assets/js/index.js')
     .pipe(sourcemaps.init())
       .pipe(babel({
         presets: ['es2015'],
@@ -29,10 +29,10 @@ gulp.task('scripts', function() {
       .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('js/'));
+    .pipe(gulp.dest('assets/js/'));
 });
 
 gulp.task('default', ['styles', 'scripts'], function() {
   gulp.watch('scss/**/*.scss', ['styles']);
-  gulp.watch('js/**/*.js', ['scripts']);
+  gulp.watch('assets/js/**/*.js', ['scripts']);
 });

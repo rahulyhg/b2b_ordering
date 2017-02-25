@@ -1,0 +1,45 @@
+.mobile-nav-container {
+  background-color: #222;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 700;
+  transition: right 0.3s ease-out;
+  will-change: right;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.nav-active {
+  right: 0;
+}
+
+.nav-items-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+  height: 100vh;
+  // margin-top: -50px;
+}
+
+.mobile-nav-item {
+  color: #FFF;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 10px 0 10px 20px;
+  letter-spacing: 1.5px;
+}
+
+.nav-black {
+  fill: #000;
+}
+
+.nav-white {
+  fill: #FFF;
+}

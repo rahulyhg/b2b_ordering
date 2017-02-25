@@ -35,11 +35,16 @@
 
 .product-callout {
   color: #f44336;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 900;
   text-transform: uppercase;
   margin: -10px 0 0 -15px;
   width: 100%;
+  line-height: 36px;
+
+  p {
+    margin: 10px 0 10px 0;
+  }
 }
 
 .product-select {
@@ -48,4 +53,26 @@
 
 .product-btn {
   margin-bottom: 30px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+  .product-callout {
+    font-size: 35px;
+    line-height: 50px;
+
+    p {
+      margin: 15px 0 15px 0;
+    }
+  }
 }
