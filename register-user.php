@@ -159,7 +159,7 @@ if(isset($_POST['submit-form'])) {
 							</div>
 
 							<div class="form-item col-xs-12">
-								<input class="btn col-xs-12" type="submit" value="Register" name="submit-form" />
+								<input class="btn btn-hover-black col-xs-12" type="submit" value="Register" name="submit-form" />
 							</div>
 						</form>
 					</div>

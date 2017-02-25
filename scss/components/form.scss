@@ -23,6 +23,11 @@ input[type="text"] {
   &::value {
     padding-left: 20px;
   }
+
+  &:focus {
+    border-color: #f44336;
+    outline: 0;
+  }
 }
 
 input[type="password"] {
@@ -33,6 +38,11 @@ input[type="password"] {
   &::value {
     padding-left: 20px;
   }
+
+  &:focus {
+    border-color: #f44336;
+    outline: 0;
+  }
 }
 
 textarea {
@@ -40,6 +50,11 @@ textarea {
   background: #FFF;
   border: 3px solid #333;
   padding: 5px 0 5px 20px;
+
+  &:focus {
+    border-color: #f44336;
+    outline: 0;
+  }
 }
 
 select {

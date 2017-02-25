@@ -118,7 +118,7 @@ if(isset($_POST['submit-settings'])) {
 										</div>
 
 										<div class="form-item col-xs-12">
-											<input class="btn col-xs-12" type="submit" value="Update" name="submit-settings" />
+											<input class="btn btn-hover-black col-xs-12" type="submit" value="Update" name="submit-settings" />
 										</div>
 									</form>
 								</div>

@@ -30,7 +30,7 @@
               <h2 class="form-heading">YOUR CART:</h2>
 
               <form class="empty-cart-form" action="cart.php" method="post">
-                <input class="btn" type="submit" name="empty-cart" value="Empty Cart">
+                <input class="btn btn-hover-black" type="submit" name="empty-cart" value="Empty Cart">
               </form>
 
             </div>

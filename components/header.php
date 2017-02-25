@@ -9,7 +9,7 @@
         <img class="header-logo" src="./assets/img/nike_swoosh.svg" alt="Nike Logo">
       </a>
     </div>
-    <nav class="navigation-container col-xs-8">
+    <nav class="navigation-container col-xs-8 col-xs-offset-0 col-lg-7 col-lg-offset-1 ">
 
       <!-- Desktop Nav
       ----------------->
@@ -37,24 +37,24 @@
               </ul>
             </div>
           </li>
-          <li class="menu-item">
+          <li class="menu-item no-submenu-hover">
             <a href="#">sale</a>
           </li>
           <?php if(isset($_SESSION['logged_in'])) : ?>
-            <li class="menu-item">
+            <li class="menu-item no-submenu-hover">
               <a href="profile.php">profile</a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item no-submenu-hover">
               <a href="logout.php">log out</a>
             </li>
-            <li class="desktop-cart">
+            <li class="desktop-cart no-submenu-hover">
               <a href="cart.php"><img class="cart-icon" src="./assets/img/shopping_cart.svg" alt="Shopping Cart"></a>
             </li>
           <?php else : ?>
-            <li class="menu-item">
+            <li class="menu-item no-submenu-hover">
               <a href="register-user.php">register</a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item no-submenu-hover">
               <a href="login.php">log in</a>
             </li>
           <?php endif; ?>

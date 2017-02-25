@@ -44,7 +44,6 @@ header {
 
 // Desktop Nav Styles
 .desktop-nav-container {
-
 }
 
 .dropdownBackground {
@@ -88,6 +87,13 @@ header {
       text-decoration: none;
 
     }
+  }
+}
+
+.no-submenu-hover {
+  transition: opacity 0.3s ease-out;
+  &:hover {
+    opacity: 0.7;
   }
 }
 
@@ -162,5 +168,7 @@ header {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) {
-
+  .desktop-nav-container {
+    margin-left: -36px;
+  }
 }

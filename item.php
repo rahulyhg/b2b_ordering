@@ -122,7 +122,7 @@
 
               <!-- Product Buy Button -->
               <div class="row">
-                <button class="product-btn btn --red col-xs-12" type="submit" name="add-to-cart">Add to Cart</button>
+                <button class="product-btn btn --red btn-hover-red col-xs-12" type="submit" name="add-to-cart">Add to Cart</button>
               </div>
             </form>
           </div>

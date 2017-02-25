@@ -82,7 +82,7 @@ if(isset($_POST['submit-login'])) {
 							</div>
 
 							<div class="form-item col-xs-12">
-								<input class="btn col-xs-12" type="submit" value="Login" name="submit-login" />
+								<input class="btn btn-hover-black col-xs-12" type="submit" value="Login" name="submit-login" />
 							</div>
 						</form>
 					</div>
