@@ -95,22 +95,24 @@
             <form class="" action="<?php echo $url_string; ?>" method="post">
               <!-- Product Size Select -->
               <div class="row">
-                <select class="product-select col-xs-12" name="">
-                  <option value="">Size</option>
-                  <option value="">Extra Small</option>
-                  <option value="">Small</option>
-                  <option value="">Medium</option>
+                <select class="product-select col-xs-12" name="" required>
+                  <option value="" disabled selected>Size</option>
+                  <option value="Extra Small">Extra Small</option>
+                  <option value="Small">Small</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Large">Large</option>
+                  <option value="X-Large">X-Large</option>
                 </select>
               </div>
 
               <!-- Product Quantity -->
               <div class="row">
-                <select class="product-select col-xs-12" name="quantity">
-                  <option value="">Quantity</option>
+                <select class="product-select col-xs-12" name="quantity" required>
+                  <option value="" disabled selected>Quantity</option>
                   <option value="10">10</option>
                   <option value="20">20</option>
                   <option value="30">30</option>
-                  <option value="40">50</option>
+                  <option value="40">40</option>
                   <option value="50">50</option>
                   <option value="60">60</option>
                   <option value="70">70</option>
