@@ -73,12 +73,12 @@ if(isset($_POST['submit-login'])) {
 						<form class="form-ctn" action="login.php" method="post">
 							<div class="form-item col-xs-12">
 								<label for="name">username:</label><br>
-								<input class="col-xs-12" type="text" name="username" value="<?php echo $username; ?>">
+								<input class="col-xs-12" type="text" name="username" value="<?php echo $username; ?>" required>
 							</div>
 
 							<div class="form-item col-xs-12">
 								<label for="name">password:</label><br>
-								<input class="col-xs-12" type="password" name="password" value="<?php echo $password; ?>">
+								<input class="col-xs-12" type="password" name="password" value="<?php echo $password; ?>" required>
 							</div>
 
 							<div class="form-item col-xs-12">

@@ -120,17 +120,17 @@ if(isset($_POST['submit-form'])) {
 						<form class="form-ctn" action="register-user.php" method="post">
 							<div class="form-item col-xs-12">
 								<label for="name">username:</label><br>
-								<input class="col-xs-12" type="text" name="username" value="<?php echo $username; ?>">
+								<input class="col-xs-12" type="text" name="username" value="<?php echo $username; ?>" required>
 							</div>
 
 							<div class="form-item col-xs-12">
 								<label for="name">password:</label><br>
-								<input class="col-xs-12" type="password" name="password" value="<?php echo $password; ?>">
+								<input class="col-xs-12" type="password" name="password" value="<?php echo $password; ?>" required>
 							</div>
 
 							<div class="form-item col-xs-12">
 								<label for="name">confirm password:</label><br>
-								<input class="col-xs-12" type="password" name="password-confirm" value="<?php echo $password; ?>">
+								<input class="col-xs-12" type="password" name="password-confirm" value="<?php echo $password; ?>" required>
 							</div>
 
 							<div class="form-item col-xs-12">
@@ -155,7 +155,7 @@ if(isset($_POST['submit-form'])) {
 
 							<div class="form-item col-xs-12">
 								<label for="name">e-mail:</label><br>
-								<input class="col-xs-12" type="text" name="email" value="<?php echo $email; ?>">
+								<input class="col-xs-12" type="text" name="email" value="<?php echo $email; ?>" required>
 							</div>
 
 							<div class="form-item col-xs-12">
